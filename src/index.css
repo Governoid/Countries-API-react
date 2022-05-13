@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width:  100%;
+  height: 100%;
+}
+
+
+body {
+  font-family: 'Nunito Sans', 'sans-serif';
+  background-color: #212121; 
+  color: white;
+}
+.grid {
+  padding-left: 4px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-top: 25px;
+}
+.grid article img {
+  border-radius: 5px 5px 0 0;
+}
+.grid .borders {
+  border-radius: 0 0 5px 5px;
+  background-color: #2C2F33;
+  margin: -10px 0 30px;
+  padding: 20px;
+}
+.grid .borders h3 {
+  padding-bottom: 10px;
+}
+
+.grid .borders h4 span {
+  font-weight: 300;
+}
+
+.grid .borders h3 {
+  padding-bottom: 5px;
+}
+
+
+@media (max-width:320px) {
+  div .header {
+    width: 280px;
+  }
+  div article {
+    width: 280px;
+  }
+
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 20px;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+ .header {
+    width: 330px;
+  }
+  article {
+    width: 330px;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    padding: 20px;
+  }
+}
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 50px;
+  }
+  .grid article img {
+    height: 320px;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .grid article img {
+    height: 250px;
+  }
+}
+@media (min-width: 1440px) {
+  .grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media (min-width: 1441px) {
+  .grid {
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
+.header {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2C2F33;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #3c4147;
+  padding: 5px 5px 5px 0px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 2px;
+  border-radius: 4px;
+  width: 100%;
+  margin-left: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #FF4545;
+}
+
+.grids {
+  border-radius: 0 0 5px 5px;
+  background-color: #2C2F33;
+  margin: -10px 0 30px;
+  padding: 20px;
+}
+.grids article img {
+  border-radius: 5px 5px 0 0;
+  height: 250px;
+}
+.grids .borders {
+  border-radius: 0 0 5px 5px;
+  background-color: #2C2F33;
+  margin: -10px 0 30px;
+  padding: 20px;
+}
+.grids .borders h3 {
+  padding-bottom: 10px;
+}
+
+.grids .borders h4 span {
+  font-weight: 300;
+}
+
+.grids .borders h3 {
+  padding-bottom: 5px;
+}
+ .backbtn{
+  background-color: #3c4147;
+  padding: 5px 5px 5px 0px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 2px;
+  border-radius: 4px;
+  width: 100%;
+  margin-left: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.btns {
+  background-color: #2C2F33;
+  padding: 5px 5px 5px 0px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 2px;
+  border-radius: 4px;
+  width: 100%;
+  margin-left: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+.flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.btns:hover {
+  color: #fff;
+  background: #FF4545;
+  }
+  @media (max-width: 320px) {
+    .btns {
+      width: 275px;
+      display: flex;
+      flex-direction: column;
+    }
+    }
+@media (max-width: 768px) {
+  .flex {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+  }
+  }
+  @media (max-width: 375px) {
+    .flex {
+      width: 325px;
+      display: flex;
+      flex-direction: column;
+    }
+    }
+    @media (max-width: 320px) {
+      .flex {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+      }
+      }
+.header h1 {
+  padding-left: 20px;
+}
