@@ -244,3 +244,18 @@ body {
 .header h1 {
   padding-left: 20px;
 }
+.back {
+  width: 5%;
+  display: flex;
+  justify-content: left;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .back {
+    width: 30%;
+  }
+  }
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1440px) {
+    .back {
+      width: 15%;
+    }
+  }

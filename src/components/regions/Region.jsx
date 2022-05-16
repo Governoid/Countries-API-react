@@ -19,7 +19,7 @@ const Region = () => {
 
     return (
         <>
-        <Link to="/" className='btn'>Back to All</Link>
+        <Link to="/" className='btn back'>Back to All</Link>
         <h1 className='currentregion'>{regionname}</h1>
         <section className="grid">
             
