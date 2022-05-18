@@ -297,11 +297,12 @@ body {
     height: 200px;
   }
 }
-@media (min-width: 320px) and (max-device-width: 1023px) {
+@media (min-width: 100px) and (max-device-width: 1023px) {
   .currentregion {
     padding-left: 0px;
   }
   .back {
+    width: 20%;
     margin-left: 0px;
   }
 }
