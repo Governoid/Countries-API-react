@@ -19,8 +19,8 @@ const Region = () => {
 
     return (
         <>
-        <Link to="/" className='btn back'>Back to All</Link>
         <h1 className='currentregion'>{regionname}</h1>
+        <Link to="/" className='btn back'>Back to All</Link>
         <section className="grid">
             
         {country.filter(country =>{

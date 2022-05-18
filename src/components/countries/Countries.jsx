@@ -20,7 +20,32 @@ const Countries = () => {
         fetchCountryData()
     }, [])
 
-    return (   
+    const allcontinents = countries
+    const uniqueTags = [];
+
+    allcontinents.forEach(img => {
+        if (uniqueTags.indexOf(img.continents) === -1) {
+            uniqueTags.push(img.continents)
+        }
+        });
+
+    const arrays = []
+    for (let i = 0; i < 249; i++){
+        if (uniqueTags[i] !== undefined) {
+            if (uniqueTags[i][0] === "Antarctica"){
+                uniqueTags[i][0] = "Antarctic"
+            }
+            arrays.push(uniqueTags[i][0])
+        }
+    }
+
+
+    const array = arrays.map(q => q);
+    return (
+        <>
+        <div className='flex'>
+            {array.filter((q, idx) => array.indexOf(q) === idx).map((item, index) => {return <Link to={"/region/"+item} className='btns btntop' key={index}>{item}</Link>})}
+        </div> 
         <div className="grid">
             {countries.map((country) => {
                 const { ccn3, name, population, region, capital, flags, } = country
@@ -39,6 +64,7 @@ const Countries = () => {
 
             })}
         </div>
+        </>
     )
 }
 

@@ -19,7 +19,6 @@ body {
   color: white;
 }
 .grid {
-  padding-left: 4px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
@@ -84,11 +83,11 @@ body {
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding-bottom: 50px;
   }
   .grid article img {
-    height: 320px;
+    height: 250px;
   }
 }
 
@@ -100,17 +99,19 @@ body {
 @media (min-width: 1024px) {
   .grid {
     grid-template-columns: repeat(2,1fr);
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .grid article img {
     height: 250px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1141px) {
   .grid {
     grid-template-columns: repeat(3,1fr);
   }
 }
-@media (min-width: 1441px) {
+@media (min-width: 1575px) {
   .grid {
     grid-template-columns: repeat(4,1fr);
   }
@@ -118,7 +119,6 @@ body {
 
 .header {
   display: flex;
-  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
   background-color: #2C2F33;
@@ -134,7 +134,6 @@ body {
   margin-bottom: 2px;
   border-radius: 4px;
   width: 100%;
-  margin-left: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -196,8 +195,8 @@ body {
   color: #fff;
   margin-bottom: 2px;
   border-radius: 4px;
-  width: 100%;
   margin-left: 3px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,6 +244,10 @@ body {
   padding-left: 20px;
 }
 .back {
+  margin-top: -20px;
+  margin-bottom: -15px;
+  padding-left: 20px;
+  margin-left: 20px;
   width: 5%;
   display: flex;
   justify-content: left;
@@ -259,3 +262,52 @@ body {
       width: 15%;
     }
   }
+.currentregion {
+  padding-left: 20px;
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
+  body {
+    padding: 20px;
+  }
+}
+@media (min-width: 321px) and (max-device-width: 342px) {
+  .header {
+    width: 295px;
+  }
+  .btns {
+    width: 290px;
+  }
+  article {
+    width: 295px;
+  }
+}
+@media (min-width: 343px) and (max-device-width: 369px) {
+  .header {
+    width: 310px;
+  }
+  .btns {
+    width: 305px;
+  }
+  article {
+    width: 310px;
+  }
+}
+@media (min-width: 425px) and (max-device-width: 639px) {
+  .grid article img{
+    height: 200px;
+  }
+}
+@media (min-width: 320px) and (max-device-width: 1023px) {
+  .currentregion {
+    padding-left: 0px;
+  }
+  .back {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 550px) and (max-device-width: 1140px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+} 

@@ -2,12 +2,9 @@
     padding-top: 50px;
 }
 .backbtn {
-    margin-top: 20px;
+  width: 180px;
 }
-  
-.country article .country-details div {
-    margin: 30px 0;
-}
+
   
 .country article .country-details div h2 {
     font-size: 30px;

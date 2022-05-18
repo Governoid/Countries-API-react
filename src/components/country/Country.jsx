@@ -27,6 +27,7 @@ const Country = () => {
                 const {name, population, area, flags, region} = c
 
                 return(
+                    
                     <article key={index}>
                      <div className="country-inner">
                         <div className='flags'>
@@ -59,11 +60,15 @@ const Country = () => {
                                 }): "no data"}</span></h5>
 
                             <h5>Region : <span>{region}</span></h5>
-                            </div>          
+                                <div className='yes'>
+                            <Link to={`/`} className='btn backbtn'>Back to all</Link>
+                            <Link to={`/region/${region}`} className='btn backbtn'>To region</Link> 
+                                </div>
+                            </div>         
                         </div>
                      </div>
-                     <Link to={"/"} className='btn backbtn'>Back</Link>
                     </article>
+                    
                 )
             })}
         </div>
